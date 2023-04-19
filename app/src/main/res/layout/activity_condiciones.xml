@@ -21,21 +21,21 @@
         app:layout_constraintVertical_bias="0.132" />
 
     <Button
-        android:id="@+id/aceptar"
+        android:id="@+id/aceptarButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="aceptar"
-        app:layout_constraintEnd_toStartOf="@+id/rechazar"
+        app:layout_constraintEnd_toStartOf="@+id/rechazarButton"
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="@+id/condicionesTexto"
         app:layout_constraintTop_toBottomOf="@+id/condicionesTexto" />
 
     <Button
-        android:id="@+id/rechazar"
+        android:id="@+id/rechazarButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="rechazar"
         app:layout_constraintEnd_toEndOf="@+id/condicionesTexto"
-        app:layout_constraintStart_toEndOf="@+id/aceptar"
+        app:layout_constraintStart_toEndOf="@+id/aceptarButton"
         app:layout_constraintTop_toBottomOf="@+id/condicionesTexto" />
 </androidx.constraintlayout.widget.ConstraintLayout>

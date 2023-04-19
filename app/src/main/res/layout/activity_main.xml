@@ -20,37 +20,41 @@
         app:layout_constraintVertical_bias="0.109" />
 
     <EditText
-        android:id="@+id/nombre"
-        android:layout_width="wrap_content"
+        android:id="@+id/nombreEditText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/verificar"
+        android:id="@+id/verificarButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="verificar"
-        app:layout_constraintEnd_toEndOf="@+id/nombre"
-        app:layout_constraintStart_toStartOf="@+id/nombre"
-        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+        app:layout_constraintEnd_toEndOf="@+id/nombreEditText"
+        app:layout_constraintStart_toStartOf="@+id/nombreEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
 
-    <EditText
-        android:id="@+id/resultado"
+    <TextView
+        android:id="@+id/resultadoTextView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/verificar"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:background="#ADE0E6"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/verificarButton"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/verificar"
-        app:layout_constraintTop_toBottomOf="@+id/verificar" />
+        app:layout_constraintStart_toStartOf="@+id/verificarButton"
+        app:layout_constraintTop_toBottomOf="@+id/verificarButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
