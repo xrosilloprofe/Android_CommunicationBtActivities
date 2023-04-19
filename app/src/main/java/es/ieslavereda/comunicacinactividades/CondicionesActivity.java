@@ -39,6 +39,8 @@ public class CondicionesActivity extends AppCompatActivity {
         bCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent();
+                setResult(RESULT_CANCELED,intent);
                 finish();
             }
         });

@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
             someActivityResultLauncher.launch(intent);
         });
 
-
         //ESTA PARTE LA DEJO, PERO ESTÁ DEPRECATED
 //        bVerificar.setOnClickListener(new View.OnClickListener() {
 //            @Override
